@@ -12,5 +12,5 @@ export const messageRoutes = Router();
 
 messageRoutes.post("/add-message/:orderId", verifyToken, addMessage);
 messageRoutes.get("/get-messages/:orderId", verifyToken, getMessages);
-messageRoutes.get("/unread-messages", verifyToken, getUnreadMessages);
+messageRoutes.get("/unread-messages",  getUnreadMessages);
 messageRoutes.put("/mark-as-read/:messageId", verifyToken, markAsRead);
