@@ -1,0 +1,9 @@
+{
+  "name": "Fiver",
+  "version": "1.0.0",
+  "description": "Fiver Backend",
+  "main": "index.js",
+  "repository": "git@github.com:JAJAKIM22/Fiverr-clone-server.git",
+  "author": "Peter <peterjajakim@gmail.com>",
+  "license": "MIT"
+}
