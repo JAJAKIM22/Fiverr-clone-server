@@ -13,10 +13,16 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT
 
-app.use(cors({origin:[process.env.PUBLIC_URL],
-    methods:["GET","POST","PUT","PATCH","DELETE"],
-    credentials:true,
-}))
+// app.use(cors({origin:[process.env.PUBLIC_URL],
+//     methods:["GET","POST","PUT","PATCH","DELETE"],
+//     credentials:true,
+// }))
+app.use(cors({
+    origin: ['*'],
+    methods: ["GET","POST","PUT","PATCH","DELETE"],
+    credentials: true,
+}));
+
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads", express.static("uploads"));
 app.use(cookieParser());
