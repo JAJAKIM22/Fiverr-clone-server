@@ -1,4 +1,4 @@
-import {  PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 import { genSalt, hash, compare } from "bcrypt";
 import jwt from "jsonwebtoken";
 import { renameSync } from "fs";
@@ -145,7 +145,7 @@ export const signup = async (req, res, next) => {
       throw err;
     }
   };
-
+  
   
   export const setUserImage = async (req, res, next) => {
     try {
