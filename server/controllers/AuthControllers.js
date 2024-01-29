@@ -146,6 +146,7 @@ export const signup = async (req, res, next) => {
     }
   };
   
+  
   export const setUserImage = async (req, res, next) => {
     try {
       if (req.file) {
